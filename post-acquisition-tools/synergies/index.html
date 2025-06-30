@@ -869,11 +869,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#technology-and-costs" class="md-nav__link">
+  <a href="#hardware-costs" class="md-nav__link">
     <span class="md-ellipsis">
       
         <span class="md-typeset">
-          Technology and Costs
+          Hardware Costs
         </span>
       
     </span>
@@ -1265,11 +1265,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#technology-and-costs" class="md-nav__link">
+  <a href="#hardware-costs" class="md-nav__link">
     <span class="md-ellipsis">
       
         <span class="md-typeset">
-          Technology and Costs
+          Hardware Costs
         </span>
       
     </span>
@@ -1326,9 +1326,13 @@
 
 
 <h1 id="harness-location-specific-energy-intelligence">Harness Location-Specific Energy Intelligence<a class="headerlink" href="#harness-location-specific-energy-intelligence" title="Permanent link">&para;</a></h1>
+<p><span style="background:#d1ecf1; color:#0c5460; border-radius:999px; padding:3px 10px; font-size:85%; font-weight:500;">global model
+</span></p>
 <p>Pinpoint wind and solar project potential across 67,000 US sites</p>
 <h2 id="solar-cost-curve">Solar Cost Curve<a class="headerlink" href="#solar-cost-curve" title="Permanent link">&para;</a></h2>
-<p><em>LCOE incl. transmission costs, capex for new technologies, and land-siting constraints</em></p>
+<div class="admonition note">
+<p>Solar LCOE incl. transmission costs, capex for new technologies, and land-siting constraints</p>
+</div>
 <div class="responsive-iframe">
   <div id="loading-message" style="position: absolute; top: 0; width: 100%; font-size: 18px; font-weight: bold;">
     Interactive Map is Loading...
@@ -1345,11 +1349,13 @@
 </style>
 
 <div class="admonition abstract">
-<p class="admonition-title">Cost Curve Maps</p>
-<p>Interactive map shows potential plant capacity (marker size) and levelized cost of energy (color scale: green = low, yellow = medium, red = high). Zoom out to view nationwide opportunities.</p>
+<p class="admonition-title">Interactive Maps</p>
+<p>Marker size denotes potential capacity. Levelized cost of energy is described by the following color scale: green = low, yellow = medium, red = high. Zoom out to view nationwide opportunities.</p>
 </div>
 <h2 id="wind-cost-curve">Wind Cost Curve<a class="headerlink" href="#wind-cost-curve" title="Permanent link">&para;</a></h2>
-<p><em>LCOE incl. transmission costs, capex for new technologies, and land-siting constraints</em></p>
+<div class="admonition note">
+<p>Wind LCOE incl. transmission costs, capex for new technologies, and land-siting constraints</p>
+</div>
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; max-height: 100vh; overflow: hidden;">
   <iframe
     src="https://juliawawrykowicz.github.io/examples/usa_wind_cost_curve.html"
@@ -1381,9 +1387,9 @@
   F --&gt; I;
   G[Land Use] --&gt; I;
 </code></pre>
-<h3 id="technology-and-costs">Technology and Costs<a class="headerlink" href="#technology-and-costs" title="Permanent link">&para;</a></h3>
+<h3 id="hardware-costs">Hardware Costs<a class="headerlink" href="#hardware-costs" title="Permanent link">&para;</a></h3>
 <p>The following technical and financial parameters serve as the baseline for the supply curve calculations. The model assumes a 30-year capital recovery period with capital expenditure estimates benchmarked for the year 2030.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="technology-and-costs-solar-pv-characteristics" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="technology-and-costs-solar-pv-characteristics">Solar PV Characteristics</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="hardware-costs-solar-pv-characteristics" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="hardware-costs-solar-pv-characteristics">Solar PV Characteristics</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>
 </div>
@@ -1434,7 +1440,7 @@
 </tr>
 </tbody>
 </table>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="technology-and-costs-wind-technology-characteristics" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="technology-and-costs-wind-technology-characteristics">Wind Technology Characteristics</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="hardware-costs-wind-technology-characteristics" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="hardware-costs-wind-technology-characteristics">Wind Technology Characteristics</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>
 </div>
@@ -1482,8 +1488,8 @@
 </tbody>
 </table>
 <h3 id="siting-constraints">Siting Constraints<a class="headerlink" href="#siting-constraints" title="Permanent link">&para;</a></h3>
-<p>While clear obstructions like highways and urban areas are easily excluded, the model also navigates more complex land-use challenges.</p>
-<p>In the most restrictive scenario, the model applies environmental and national defense considerations in addition to standard exclusions for physical obstacles, protected lands, and regulatory setbacks.</p>
+<p>While clear obstructions like <em><strong>highways</strong></em> and <em><strong>urban areas</strong></em> are easily excluded, the model also navigates more complex land-use challenges.</p>
+<p>In the most restrictive scenario, the model applies <em><strong>environmental</strong></em> and <em><strong>national defense</strong></em> constraints in addition to standard exclusions for <em><strong>physical obstacles, protected lands</strong></em>, and <em><strong>regulatory setbacks</strong></em>.</p>
 <h3 id="grid-connection-costs">Grid Connection Costs<a class="headerlink" href="#grid-connection-costs" title="Permanent link">&para;</a></h3>
 <p>The cost of connecting a project to the electrical grid is estimated by:</p>
 <ol>
@@ -1496,7 +1502,7 @@
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Projects De-Risked</p>
-<p>Whether optimizing assets or scouting greenfield developments, this tool translates technical complexity into investment clarity.</p>
+<p>When scouting greenfield developments, this tool translates technical complexity into investment clarity.</p>
 </div>
 
 
